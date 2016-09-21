@@ -13,10 +13,11 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update -y && apt-get install -y apt-utils && apt-get upgrade -y
 
 # Grab python and friends
-RUN apt-get install -y python \
-  python-dev \
-  python-ipy \
-  python-pip
+RUN apt-get install -y python
+RUN apt-get install -y python-dev
+RUN apt-get install -y python-pip
+# FIXME: Consider doing build-essential before pip -- break it up
+RUN apt-get install -y python-ipy
 
 # Grab git (until package is in pip)
 RUN apt-get install -y git
