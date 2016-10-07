@@ -22,4 +22,4 @@ for asn, values in data.iteritems():
 	name=name.replace(',,','',200)
 
 	# Output asnumber,"as name",countrycode
-	print "AS%s\t\"%s\",%s" % (asn, name, country)
+	print "AS%s\t%s,%s" % (asn, name, country)
