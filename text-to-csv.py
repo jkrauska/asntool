@@ -20,6 +20,9 @@ for line in fileinput.input():
 
     # Skip private IP space
     if ip.iptype() == 'PRIVATE':continue
+        
+    # Skip if prefix len > 30
+    if ip.prefixlen() > 30: continue
 
     # output, ASN,IP
     print "%s,%s" %(asn, ip)
