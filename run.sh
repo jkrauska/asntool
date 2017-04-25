@@ -2,4 +2,4 @@
 
 wd=`pwd`
 mkdir -p ${wd}/data
-docker run -it -v ${wd}/data:/data asn
+docker run -it -v ${wd}/data:/data jkrauska/asntool
