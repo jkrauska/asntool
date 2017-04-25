@@ -1,3 +1,3 @@
 #!/bin/bash
 # If you build it, you can run
-docker build -t jkrauska/asntools .
+docker build -t jkrauska/asntool .
